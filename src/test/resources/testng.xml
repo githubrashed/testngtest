@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="D:/Others/testngtest">
         <classes>
-            <class name="com.academy.learning.sqa.testngtest.LoginWithMainMethod">
+            <class name="com.academy.learning.sqa.testngtest.LoginWithMainMethlod">
             </class>
             <class name="com.academy.learning.sqa.testngtest.OptimizeLoginWithTestNGTest">
             </class>
