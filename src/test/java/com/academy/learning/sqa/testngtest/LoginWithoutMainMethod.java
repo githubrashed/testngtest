@@ -1,9 +1,7 @@
 package com.academy.learning.sqa.testngtest;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -39,11 +37,11 @@ public class LoginWithoutMainMethod extends BaseClass{
         loginButton.click();
         System.out.println("Application login successfully");
         System.out.println(driver.getTitle());
-//        driver.quit();
         String expectedPageTitle = "OrangeHRM";
         String actualPageTitle = driver.getTitle();
         Assert.assertEquals(expectedPageTitle, actualPageTitle);
         System.out.println("Test Case no 2 passed");
+        driver.quit();
     }
 
     @Override
