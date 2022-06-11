@@ -5,11 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginWithoutMainMethod extends BaseClass{
+public class LoginWithoutMainMethod extends BaseClass {
     @Test(priority = 0, enabled = true)
     public void loginWithValidUserPasswordShouldSucceed() {
-//        System.setProperty("webdriver.gecko.driver", "D:\\Others\\Driver\\geckodriver.exe");
-//        WebDriver driver = new FirefoxDriver();
+        /*System.setProperty("webdriver.gecko.driver", "D:\\Others\\Driver\\geckodriver.exe");
+        WebDriver driver = new FirefoxDriver();*/
+        
         driver.get(applicationUrl);
         driver.manage().window().maximize();
         WebElement userName = driver.findElement(By.cssSelector("input#txtUsername"));
@@ -27,6 +28,7 @@ public class LoginWithoutMainMethod extends BaseClass{
     public void verifyPageTitleInLoginPageShouldSucceed() {
         /*System.setProperty("webdriver.gecko.driver", "D:\\Others\\Driver\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();*/
+
         driver.manage().window().maximize();
         driver.get(applicationUrl);
         WebElement userName = driver.findElement(By.cssSelector("input#txtUsername"));
