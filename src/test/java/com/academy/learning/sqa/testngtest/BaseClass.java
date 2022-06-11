@@ -9,6 +9,7 @@ import java.time.Duration;
 
 public abstract class BaseClass {
     protected abstract String getTargetedPageTile();
+
     public String applicationUrl = "https://opensource-demo.orangehrmlive.com/";
     public String userForLogin = "Admin";
     public String passForLogin = "admin123";
