@@ -33,4 +33,5 @@ public abstract class BaseClass {
     public void tearDown() {
         driver.quit();
     }
+
 }

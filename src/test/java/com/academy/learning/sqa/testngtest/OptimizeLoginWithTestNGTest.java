@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 public class OptimizeLoginWithTestNGTest extends BaseClass {
+
     @Test(priority = 0, enabled = true)
     public void loginWithValidUserPasswordShouldSucceed() {
         driver.get(applicationUrl);
