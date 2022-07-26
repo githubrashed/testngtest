@@ -10,7 +10,6 @@ import java.time.Duration;
 
 public abstract class BaseClass {
     protected abstract String getTargetedPageTile();
-
     public String applicationUrl = "https://opensource-demo.orangehrmlive.com/";
     public String userForLogin = "Admin";
     public String passForLogin = "admin123";
@@ -39,6 +38,4 @@ public abstract class BaseClass {
     String driverLocation = System.getProperty("user.dir") + "\\src\\test\\resources\\Driver\\geckodriver.exe";
     System.setProperty("webdriver.gecko.driver",driverLocation);
     System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\webDriver\\geckodriver.exe");*/
-
-
 }
