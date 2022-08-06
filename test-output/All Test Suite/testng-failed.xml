@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="D:/Others/testngtest(failed)">
+    <classes>
+      <class name="com.academy.learning.sqa.testngtest.LoginWithoutMainMethod">
+        <methods>
+          <include name="verifyPageTitleInLoginPageShouldSucceed"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.academy.learning.sqa.testngtest.LoginWithoutMainMethod -->
+    </classes>
+  </test> <!-- D:/Others/testngtest(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
