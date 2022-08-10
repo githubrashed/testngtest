@@ -24,7 +24,6 @@ public abstract class BaseClass {
         driver.manage().timeouts().implicitlyWait((Duration.ofSeconds(10)));
 //      PageFactory.initElements(driver, this);
     }
-
     @AfterClass
     public void tearDown() {
         driver.quit();
