@@ -5,12 +5,12 @@ import org.openqa.selenium.WebElement;
 
 public class LoginWithMainMethlod extends BaseClass {
     public static void main(String[] args) {
-//        String homeDirectory = System.getProperty("user.dir");
-//        System.out.println("home Directory is: " + " "  + homeDirectory);
-//        System.setProperty("webdriver.gecko.driver", "D:\\Others\\Driver\\geckodriver.exe");
-        /*String driverLocation = System.getProperty("user.dir") + "\\src\\test\\resources\\Driver\\geckodriver.exe";
+        /*String homeDirectory = System.getProperty("user.dir");
+        System.out.println("home Directory is: " + " " + homeDirectory);
+        System.setProperty("webdriver.gecko.driver", "D:\\Others\\Driver\\geckodriver.exe");
+        String driverLocation = System.getProperty("user.dir") + "\\src\\test\\resources\\Driver\\geckodriver.exe";
         System.setProperty("webdriver.gecko.driver", driverLocation);
-//        System.setProperty("webdriver.gecko.driver", "D:\\Others\\Driver\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "D:\\Others\\Driver\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();*/
         driver.get("https://opensource-demo.orangehrmlive.com/");
         driver.manage().window().maximize();
