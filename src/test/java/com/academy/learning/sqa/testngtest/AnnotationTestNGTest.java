@@ -1,65 +1,57 @@
 package com.academy.learning.sqa.testngtest;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
-import java.time.Duration;
+public class AnnotationTestNGTest {
 
-public class AnnotationtewstNGTest {
     @BeforeSuite
-    void beforeSuite()
-    {
+    void beforeSuite() {
         System.out.println("beforeSuite");
     }
+
     @BeforeClass
-    void beforeClass()
-    {
+    void beforeClass() {
         System.out.println("beforeClass");
     }
+
     @BeforeTest
-    void beforeTest()
-    {
+    void beforeTest() {
         System.out.println("beforeTest");
     }
 
     @BeforeMethod
-    void beforeMethod()
-    {
+    void beforeMethod() {
         System.out.println("beforeMethod");
-
     }
 
     @Test
-    void test1(){
-        System.out.println("test1");
+    void testOne() {
+        System.out.println("testOne");
     }
+
     @AfterMethod
-    void aftereMethod()
-    {
+    void afterMethod() {
         System.out.println("afterMethod");
     }
 
-
     @Test
-    void test2(){
-        System.out.println("test2");
+    void testTwo() {
+        System.out.println("testTwo");
     }
+
     @AfterTest
-    void afterTest()
-    {
+    void afterTest() {
         System.out.println("afterTest");
     }
+
     @AfterClass
-    void afterClass()
-    {
+    void afterClass() {
         System.out.println("afterClass");
     }
+
     @AfterSuite
-    void AfterSuite()
-    {
+    void AfterSuite() {
         System.out.println("afterSuite");
     }
+
 }

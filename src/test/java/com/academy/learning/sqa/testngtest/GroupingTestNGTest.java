@@ -1,19 +1,20 @@
 package com.academy.learning.sqa.testngtest;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class GroupingTestNGTest {
-    //include separate single group, multi group
-    //exclude separate single group, multi group
-//(groups = {"sanity"})
-   // (groups = {"regression"})
+    /*include separate single group, multi group
+      exclude separate single group, multi group
+     (groups = {"sanity"})
+     (groups = {"regression"})
+     */
+
     @Test(groups = {"sanity"})
     public void startCar() {
         System.out.println("Car Started");
     }
 
-    @Test
+    @Test(groups = {"regression"})
     public void driveCar() {
         System.out.println("Car Driving");
     }
@@ -27,4 +28,5 @@ public class GroupingTestNGTest {
     public void parkCar() {
         System.out.println("Car parked");
     }
+
 }
