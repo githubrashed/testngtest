@@ -23,5 +23,4 @@ public class PriorityTestNGTest {
     public void closeBrowser() {
         System.out.println("Closing Browser");
     }
-
 }
