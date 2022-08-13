@@ -1,5 +1,6 @@
 package com.academy.learning.sqa.testngtest;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -17,19 +18,23 @@ public abstract class BaseClass {
 
     @BeforeClass
     public void setUp() {
-        String homeDirectory = System.getProperty("user.dir");
-        System.out.println(homeDirectory);
-//        System.setProperty("webdriver.gecko.driver", "D:\\Others\\Driver\\geckodriver.exe");
-        String driverLocation = System.getProperty("user.dir") + "\\src\\test\\resources\\Driver\\geckodriver.exe";
-        System.setProperty("webdriver.gecko.driver", driverLocation);
-//        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\webDriver\\geckodriver.exe");
+
+        WebDriverManager.firefoxdriver().setup();
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait((Duration.ofSeconds(10)));
-//        PageFactory.initElements(driver, this);
+//      PageFactory.initElements(driver, this);
     }
-
     @AfterClass
     public void tearDown() {
         driver.quit();
     }
+
+    /*String homeDirectory = System.getProperty("user.dir");
+    System.out.println(homeDirectory);
+    String driverLocation = System.getProperty("user.dir") + "\\src\\test\\resources\\Driver\\geckodriver.exe";
+    System.setProperty("webdriver.gecko.driver",driverLocation);
+    System.setProperty("webdriver.gecko.driver","D:\\Others\\Driver\\geckodriver.exe");
+    String driverLocation = System.getProperty("user.dir") + "\\src\\test\\resources\\Driver\\geckodriver.exe";
+    System.setProperty("webdriver.gecko.driver",driverLocation);
+    System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\webDriver\\geckodriver.exe");*/
 }
