@@ -53,5 +53,4 @@ public class AnnotationTestNGTest {
     void AfterSuite() {
         System.out.println("afterSuite");
     }
-
 }

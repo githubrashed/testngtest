@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class DependencyTestNgTest {
+
     /*successful Dependency Test case in TestNG
     Make Assert.fail() to check dependsOnMethods methods are not executed
     run method forcefully by alwaysRun property e.g. alwaysRun = true*/

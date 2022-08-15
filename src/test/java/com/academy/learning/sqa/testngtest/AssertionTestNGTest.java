@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AssertionTestNGTest extends BaseClass {
+
     @Test
     public void verifyPageTitleInLoginPageShouldSucceed() {
         /*System.setProperty("webdriver.gecko.driver", "D:\\Others\\Driver\\geckodriver.exe");
@@ -41,4 +42,5 @@ public class AssertionTestNGTest extends BaseClass {
     protected String getTargetedPageTile() {
         return "OrangeHRM";
     }
+
 }

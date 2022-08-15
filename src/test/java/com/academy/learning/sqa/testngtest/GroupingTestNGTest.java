@@ -3,6 +3,7 @@ package com.academy.learning.sqa.testngtest;
 import org.testng.annotations.Test;
 
 public class GroupingTestNGTest {
+
     /*include separate single group, multi group
       exclude separate single group, multi group
      (groups = {"sanity"})

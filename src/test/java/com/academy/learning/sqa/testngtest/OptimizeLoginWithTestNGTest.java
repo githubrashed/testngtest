@@ -20,6 +20,7 @@ public class OptimizeLoginWithTestNGTest extends BaseClass {
         userName.sendKeys(userForLogin);
         password.sendKeys(passForLogin);
         loginButton.click();
+
         System.out.println("Application login successfully");
         System.out.println(driver.getTitle());
         System.out.println("Test Case  passed");

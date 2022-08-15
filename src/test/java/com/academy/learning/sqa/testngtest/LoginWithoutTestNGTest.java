@@ -24,9 +24,11 @@ public class LoginWithoutTestNGTest extends BaseClass {
         userName.sendKeys("Admin");
         password.sendKeys("admin123");
         loginButton.click();
+
         String actualHomePageTitle = driver.getTitle();
         System.out.println("Application login successfully");
         System.out.println("Home Page Title is: " + actualHomePageTitle);
+
         try {
             if (actualHomePageTitle.equals("OrangeHRM")) {
                 System.out.println("Test Case passed");
@@ -35,6 +37,7 @@ public class LoginWithoutTestNGTest extends BaseClass {
         } catch (Exception e) {
             System.out.println(" Home Page Title: " + actualHomePageTitle + "Not found");
         }
+
         driver.quit();
 
     }

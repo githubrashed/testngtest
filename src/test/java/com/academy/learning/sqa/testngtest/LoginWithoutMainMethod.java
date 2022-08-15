@@ -25,6 +25,7 @@ public class LoginWithoutMainMethod extends BaseClass {
         password.sendKeys(passForLogin);
         loginButton.click();
         System.out.println("Application login successfully");
+
         System.out.println(driver.getTitle());
         String expectedPageTitle = "OrangeHRM";
         String actualPageTitle = driver.getTitle();
