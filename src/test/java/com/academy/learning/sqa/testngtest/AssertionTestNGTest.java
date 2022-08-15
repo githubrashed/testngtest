@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AssertionTestNGTest extends BaseClass {
+
     @Test
     public void verifyPageTitleInLoginPageShouldSucceed() {
         /*System.setProperty("webdriver.gecko.driver", "D:\\Others\\Driver\\geckodriver.exe");
@@ -22,18 +23,18 @@ public class AssertionTestNGTest extends BaseClass {
         loginButton.click();
         System.out.println("Application login successfully");
         System.out.println(driver.getTitle());
-        String expectedPageTitle = "OrangeHRM";
-       // OrangeHRM
-//        String expectedPageTitle = getTargetedPageTile();
+//      String expectedPageTitle = "OrangeHRM";
+//      Page Tile is OrangeHRM
+        String expectedPageTitle = getTargetedPageTile();
         System.out.println("Expected Title is: " + expectedPageTitle);
         String actualPageTitle = driver.getTitle();
-        System.out.println("actualPageTitle: " +actualPageTitle );
-        Assert.assertEquals(actualPageTitle,expectedPageTitle);
-//        Assert.assertEquals(expectedPageTitle, actualPageTitle);
-        Assert.assertTrue(expectedPageTitle.contains(expectedPageTitle));
-//        Assert.assertTrue(actualPageTitle.contains("OrangeHRM"));
-//        Assert.assertFalse(actualPageTitle.contains("OrangeHRM"));
-        System.out.println("Test Case no 2 passed");
+        System.out.println("actualPageTitle: " + actualPageTitle);
+        Assert.assertEquals(actualPageTitle, expectedPageTitle);
+        Assert.assertEquals(expectedPageTitle, actualPageTitle);
+//      Assert.assertTrue(expectedPageTitle.contains(expectedPageTitle));
+//      Assert.assertTrue(actualPageTitle.contains("OrangeHRM"));
+//      Assert.assertFalse(actualPageTitle.contains("OrangeHRM"));
+        System.out.println("Page title verified and test c passed");
         driver.quit();
     }
 
@@ -41,4 +42,5 @@ public class AssertionTestNGTest extends BaseClass {
     protected String getTargetedPageTile() {
         return "OrangeHRM";
     }
+
 }

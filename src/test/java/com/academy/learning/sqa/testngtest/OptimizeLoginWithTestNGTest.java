@@ -10,6 +10,7 @@ public class OptimizeLoginWithTestNGTest extends BaseClass {
 
     @Test(priority = 0, enabled = true)
     public void loginWithValidUserPasswordShouldSucceed() {
+
         driver.get(applicationUrl);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait((Duration.ofSeconds(5)));
@@ -19,9 +20,10 @@ public class OptimizeLoginWithTestNGTest extends BaseClass {
         userName.sendKeys(userForLogin);
         password.sendKeys(passForLogin);
         loginButton.click();
+
         System.out.println("Application login successfully");
         System.out.println(driver.getTitle());
-        System.out.println("Test Case no passed");
+        System.out.println("Test Case  passed");
     }
 
     @Override
@@ -29,8 +31,4 @@ public class OptimizeLoginWithTestNGTest extends BaseClass {
         return "OrangeHRM";
     }
 
-//    @Override
-//    protected String getTargetedProject() {
-//        return "project_info_id";
-//    }
 }

@@ -5,6 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
+public class LoginWithoutMainMethod extends BaseClass {
+
+    @Test(priority = 0, enabled = true)
+
 public class LoginWithoutMainMethod extends BaseClass {
 
     public void loginWithValidUserPasswordShouldSucceed() {
@@ -19,17 +25,21 @@ public class LoginWithoutMainMethod extends BaseClass {
         userName.sendKeys(userForLogin);
         password.sendKeys(passForLogin);
         loginButton.click();
+        
         System.out.println("Application login successfully");
         System.out.println(driver.getTitle());
         System.out.println("Test Case no 1 passed");
     }
     @Test(priority = 1, enabled = true)
+
     public void verifyPageTitleInLoginPageShouldSucceed() {
+
         /*System.setProperty("webdriver.gecko.driver", "D:\\Others\\Driver\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();*/
 
         driver.manage().window().maximize();
         driver.get(applicationUrl);
+        driver.manage().timeouts().implicitlyWait((Duration.ofSeconds(10)));
         WebElement userName = driver.findElement(By.cssSelector("input#txtUsername"));
         WebElement password = driver.findElement(By.cssSelector("input#txtPassword"));
         WebElement loginButton = driver.findElement(By.cssSelector("input#btnLogin"));
@@ -38,6 +48,7 @@ public class LoginWithoutMainMethod extends BaseClass {
 //        password.sendKeys(passForLogin);
         loginButton.click();
         System.out.println("Application login successfully");
+
         System.out.println(driver.getTitle());
 //        String expectedPageTitle = "OrangeHRM";
         String expectedPageTitle = getTargetedPageTile();
@@ -54,8 +65,4 @@ public class LoginWithoutMainMethod extends BaseClass {
         return "OrangeHRM";
     }
 
-//    @Override
-//    protected String getTargetedPageTile() {
-//        return "OrangeHRM";
-//    }
 }

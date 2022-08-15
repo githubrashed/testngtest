@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Test Suite">
+    <test name="TestNG Test">
+        <classes>
+            <class name="com.academy.learning.sqa.testngtest.PriorityTestNGTest"></class>
+            <class name="com.academy.learning.sqa.testngtest.DependencyTestNgTest"></class>
+            <class name="com.academy.learning.sqa.testngtest.GroupingTestNGTest"></class>
+            <class name="com.academy.learning.sqa.testngtest.LoginWithoutTestNGTest"></class>
+            <class name="com.academy.learning.sqa.testngtest.OptimizeLoginWithTestNGTest"></class>
+            <class name="com.academy.learning.sqa.testngtest.LoginWithoutMainMethod"></class>
+            <class name="com.academy.learning.sqa.testngtest.AnnotationTestNGTest"></class>
+            <class name="com.academy.learning.sqa.testngtest.AssertionTestNGTest"></class>
+            
 <suite name="Sanity Testing">
     <!--    <test verbose="2" preserve-order="true" name="D:/Others/testngtest">-->
     <test name="loginTest" parallel="classes" >
     <classes>
         <class name="com.academy.learning.sqa.testngtest.LoginWithoutMainMethod"></class>
 <!--        <class name="com.academy.learning.sqa.testngtest.PriorityTestNGTest"></class>-->
+
         </classes>
     </test>
 </suite>
